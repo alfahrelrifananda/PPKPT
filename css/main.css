@@ -36,7 +36,7 @@
   overflow: hidden;
   margin: 0;
 }
-#jumbotron .jumbotron-content .text-container .jumbotron-p{
+#jumbotron .jumbotron-content .text-container .jumbotron-p {
   margin: 0;
   position: relative;
   top: 70px;
@@ -46,7 +46,6 @@
 #jumbotron .jumbotron-content .text-container .jumbotron-p.show {
   top: 0;
 }
-
 
 /* BAGIAN TENTANG KAMI */
 
@@ -94,36 +93,69 @@
   top: 0;
 }
 
-
 #tentang-kami .tentang-kami-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 20px;
+  gap: 5px;
   margin-top: var(--padding-vertical);
 }
 
-
-
+/* BAGIAN VISI MISI */
 
 #visi-misi {
+  background-color: var(--color-secondary-dark);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  min-height: fit-content;
+}
+
+#visi-misi .visi-container,
+#visi-misi .misi-container {
+  background-color: var(--color-secondary);
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
-  background-color: var(--color-light);
   padding-top: var(--padding-vertical);
-  background-color: var(--color-secondary);
   padding-bottom: var(--padding-vertical);
-  min-height: 100vh;
+  color: var(--color-light);
+}
+
+#visi-misi .text-element-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#visi-misi .text-element-header::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/star.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#visi-misi .text-container-body-long {
+  height: 300px;
+}
+
+#visi-misi .text-element-body-long {
+  top: 300px;
+}
+
+#visi-misi .text-element-body-long.show {
+  top: 0;
 }
 
 
+/* BAGIAN TEXT SHOW */
 
-
-
-
-
-
-.text-container-header, text-container-subheader, .text-container-body, .text-container-body-long {
+.text-container-header,
+.text-container-subheader,
+.text-container-body,
+.text-container-body-long {
   overflow: hidden;
   font-family: "Lora", Arial, sans-serif;
   height: var(--subheader-height);
@@ -141,7 +173,10 @@
   height: 200px;
 }
 
-.text-element-header, text-element-subheader, .text-element-body, .text-element-body-long {
+.text-element-header,
+.text-element-subheader,
+.text-element-body,
+.text-element-body-long {
   margin: 0;
   font-weight: var(--semi-bold);
   position: relative;
@@ -166,6 +201,9 @@
   top: 200px;
   font-family: "Work Sans", Arial, sans-serif;
 }
-.text-element-header.show, .text-element-subheader.show, .text-element-body.show, .text-element-body-long.show {
+.text-element-header.show,
+.text-element-subheader.show,
+.text-element-body.show,
+.text-element-body-long.show {
   top: 0;
 }

@@ -1,5 +1,8 @@
 const jumbotronP = document.querySelectorAll(".jumbotron-p");
 const textElementHeader = document.querySelectorAll(".text-element-header");
+const textElementHeader2 = document.querySelectorAll(
+  "#visi-misi .text-element-header"
+);
 const tentangKamiImg = document.querySelectorAll(".tentang-kami-grid-item-img");
 const textElementSubheader = document.querySelectorAll(
   ".text-element-subheader"
@@ -7,6 +10,9 @@ const textElementSubheader = document.querySelectorAll(
 const textElementBody = document.querySelectorAll(".text-element-body");
 const tentangKamiBodyLong = document.querySelectorAll(
   ".text-element-body-long"
+);
+const textElementBodyLong2 = document.querySelectorAll(
+  "#visi-misi .text-element-body-long"
 );
 
 // Source - https://stackoverflow.com/questions/63382647/howto-add-class-when-section-is-in-viewport
@@ -65,10 +71,12 @@ function showWhenLoad() {
 }
 
 showWhenScoll(textElementHeader);
+showWhenScoll(textElementSubheader);
+showWhenScoll(textElementHeader2);
 showWhenScollAccording(tentangKamiImg, textElementHeader);
-showWhenScollAccording(textElementSubheader, textElementHeader);
 showWhenScollAccording(textElementBody, textElementSubheader);
 showWhenScollAccording(tentangKamiBodyLong, textElementSubheader);
+showWhenScollAccording(textElementBodyLong2, textElementHeader2);
 showWhenLoad();
 
 // Source - https://stackoverflow.com/questions/75349881/how-can-i-have-the-page-reload-to-the-top-of-the-screen-right-now-it-reloads-to
@@ -78,9 +86,9 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
-// // Source - https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery
-// // Posted by Amaresh S M
-// // Retrieved 2025-11-06, License - CC BY-SA 4.0
+// Source - https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery
+// Posted by Amaresh S M
+// Retrieved 2025-11-06, License - CC BY-SA 4.0
 // var prevScrollpos = window.pageYOffset;
 // window.onscroll = function() {
 // var currentScrollPos = window.pageYOffset;
@@ -91,4 +99,3 @@ window.onbeforeunload = function () {
 //   }
 //   prevScrollpos = currentScrollPos;
 // }
-
