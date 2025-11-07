@@ -62,7 +62,7 @@
   display: grid;
   grid-template-columns: calc(50% + var(--padding-horizontal)) 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
+  gap: 5px;
   height: 75vh;
   margin-top: var(--padding-vertical);
 }
@@ -152,6 +152,67 @@
 #visi-misi .text-element-body-long.show {
   top: 0;
 }
+
+/* BAGIAN APA ITU */
+#apa-itu {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
+  background-color: var(--color-light);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#apa-itu .apa-itu-container {
+  width: var(--container-post-width);
+  text-align: center;
+}
+
+/* BAGIAN JENIS-JENIS BULLYING */
+#jenis-jenis {
+  background-color: var(--color-light-dim);
+  border-top: 5px solid var(--color-light-dim-dark);
+  min-height: 100vh;
+}
+
+#jenis-jenis .jenis-jenis-container .text-container-header {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical); 
+}
+
+#jenis-jenis .jenis-jenis-list {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-top: 5px solid var(--color-light-dim-dark);
+  border-bottom: 5px solid var(--color-light-dim-dark);
+} 
+#jenis-jenis .jenis-jenis-list .jenis-jenis-item {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: calc(var(--padding-horizontal) / 2);
+  padding-bottom: calc(var(--padding-horizontal) / 2);
+}
+#jenis-jenis .jenis-jenis-list .jenis-jenis-item.satu {
+  border-right: 5px solid var(--color-light-dim-dark);
+  border-bottom: 5px solid var(--color-light-dim-dark);
+}
+#jenis-jenis .jenis-jenis-list .jenis-jenis-item.dua {
+  border-bottom: 5px solid var(--color-light-dim-dark);
+}
+#jenis-jenis .jenis-jenis-list .jenis-jenis-item.tiga {
+  border-right: 5px solid var(--color-light-dim-dark);
+  border-bottom: 5px solid var(--color-light-dim-dark);
+}
+#jenis-jenis .jenis-jenis-list .jenis-jenis-item.empat {
+  border-bottom: 5px solid var(--color-light-dim-dark);
+}
+
 
 
 /* BAGIAN TEXT SHOW */

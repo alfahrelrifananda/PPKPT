@@ -40,6 +40,8 @@
   --color-secondary: #1d2087;
   --color-secondary-dark: #1d206d;
   --color-light: #ffffff;
+  --color-light-dim: #f5f5f5;
+  --color-light-dim-dark: #e0e0e0;
 }
 html,
 body {
