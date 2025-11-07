@@ -60,7 +60,7 @@
 
 #tentang-kami .tentang-kami-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: calc(50% + var(--padding-horizontal)) 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
   height: 75vh;
@@ -95,10 +95,14 @@
 
 #tentang-kami .tentang-kami-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: calc(50% + var(--padding-horizontal)) 1fr;  
   width: 100%;
   gap: 5px;
   margin-top: var(--padding-vertical);
+}
+
+#tentang-kami .tentang-kami-content .text-container-body {
+  padding-right: var(--padding-horizontal);
 }
 
 /* BAGIAN VISI MISI */
