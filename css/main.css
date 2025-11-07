@@ -213,6 +213,101 @@
   border-bottom: 5px solid var(--color-light-dim-dark);
 }
 
+/* BAGIAN DAMPAK */
+#dampak {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  min-height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#dampak .dampak-content {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+}
+#dampak .dampak-content .dampak-content-important {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#dampak .dampak-content .dampak-content-important::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+#dampak .dampak-image {
+  background-image: url(../assets/tentang_kami/Rectangle\ 45.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* BAGIAN PENGANGAN DAN TINDAKLANJUT */
+#penanganan-dan-tindaklanjut {
+  background-color: var(--color-light);
+  min-height: fit-content;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-header {
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
+}
+
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-header .text-container-body {
+  width: var(--container-post-width);
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
+}
+
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item .step-number {
+  font-size: var(--header-size);
+  font-family: "Lora", Arial, sans-serif;
+  padding: 15px 30px;
+  font-weight: var(--semi-bold);
+}
+
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.satu {
+  background-color: #ff62622f;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.satu .step-number {
+  background-color: #ff626270;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.dua {
+  background-color: #ffab623b;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.dua .step-number {
+  background-color: #ffab6288;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.tiga {
+  background-color: #fffa624c;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.tiga .step-number {
+  background-color: #fffa6285;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.empat {
+  background-color: #abff6234;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.empat .step-number {
+  background-color: #abff6280;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.lima {
+  background-color: #62ff6732;
+}
+#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.lima .step-number {
+  background-color: #62ff678d;
+}
 
 
 /* BAGIAN TEXT SHOW */

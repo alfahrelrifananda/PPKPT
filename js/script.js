@@ -11,6 +11,9 @@ const textElementBody = document.querySelectorAll(".text-element-body");
 const tentangKamiBodyLong = document.querySelectorAll(
   ".text-element-body-long"
 );
+const textElementBodyLong = document.querySelectorAll(
+  ".text-element-body-long"
+);
 const textElementBodyLong2 = document.querySelectorAll(
   "#visi-misi .text-element-body-long"
 );
@@ -50,7 +53,6 @@ function showWhenScollAccording(el, elAccording) {
       el.forEach((element) => {
         if (isInViewport(elAccording[0])) {
           element.classList.add("show");
-          console.log(isInViewport(elAccording[0]));
         }
       });
     },
@@ -73,6 +75,8 @@ function showWhenLoad() {
 showWhenScoll(textElementHeader);
 showWhenScoll(textElementSubheader);
 showWhenScoll(textElementHeader2);
+showWhenScoll(textElementBody);
+showWhenScoll(textElementBodyLong);
 showWhenScollAccording(tentangKamiImg, textElementHeader);
 showWhenScollAccording(textElementBody, textElementSubheader);
 showWhenScollAccording(tentangKamiBodyLong, textElementSubheader);
