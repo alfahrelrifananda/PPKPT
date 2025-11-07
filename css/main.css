@@ -95,7 +95,7 @@
 
 #tentang-kami .tentang-kami-content {
   display: grid;
-  grid-template-columns: calc(50% + var(--padding-horizontal)) 1fr;  
+  grid-template-columns: calc(50% + var(--padding-horizontal)) 1fr;
   width: 100%;
   gap: 5px;
   margin-top: var(--padding-vertical);
@@ -172,8 +172,8 @@
 
 /* BAGIAN JENIS-JENIS BULLYING */
 #jenis-jenis {
-  background-color: var(--color-light-dim);
   border-top: 5px solid var(--color-light-dim-dark);
+  background-color: var(--color-light);
   min-height: 100vh;
 }
 
@@ -181,17 +181,18 @@
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
   padding-top: var(--padding-vertical);
-  padding-bottom: var(--padding-vertical); 
+  padding-bottom: var(--padding-vertical);
 }
 
 #jenis-jenis .jenis-jenis-list {
   display: grid;
   min-height: 100vh;
+  background-color: var(--color-light-dim);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   border-top: 5px solid var(--color-light-dim-dark);
   border-bottom: 5px solid var(--color-light-dim-dark);
-} 
+}
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item {
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
@@ -258,10 +259,14 @@
   padding-bottom: var(--padding-vertical);
 }
 
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-header .text-container-body {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-header
+  .text-container-body {
   width: var(--container-post-width);
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -269,46 +274,108 @@
   padding-right: var(--padding-horizontal);
   padding-top: var(--padding-vertical);
   padding-bottom: var(--padding-vertical);
+  border-top: 2.5px solid var(--color-light-dim-dark);
+  border-bottom: 2.5px solid var(--color-light-dim-dark);
 }
 
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item
+  .step-number {
   font-size: var(--header-size);
   font-family: "Lora", Arial, sans-serif;
   padding: 15px 30px;
   font-weight: var(--semi-bold);
 }
 
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.satu {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.satu {
   background-color: #ff62622f;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.satu .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.satu
+  .step-number {
   background-color: #ff626270;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.dua {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.dua {
   background-color: #ffab623b;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.dua .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.dua
+  .step-number {
   background-color: #ffab6288;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.tiga {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.tiga {
   background-color: #fffa624c;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.tiga .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.tiga
+  .step-number {
   background-color: #fffa6285;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.empat {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.empat {
   background-color: #abff6234;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.empat .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.empat
+  .step-number {
   background-color: #abff6280;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.lima {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.lima {
   background-color: #62ff6732;
 }
-#penanganan-dan-tindaklanjut .penanganan-dan-tindaklanjut-step .penanganan-dan-tindaklanjut-step-item.lima .step-number {
+#penanganan-dan-tindaklanjut
+  .penanganan-dan-tindaklanjut-step
+  .penanganan-dan-tindaklanjut-step-item.lima
+  .step-number {
   background-color: #62ff678d;
 }
 
+/* BAGIAN PENGADUAN KASUS */
+#pengaduan-kasus {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
+  min-height: fit-content;
+}
+
+#pengaduan-kasus .pengaduan-kasus-content .text-container-body {
+  width: var(--container-post-width);
+}
+
+#pengaduan-kasus .pengaduan-kasus-content button {
+  padding: 10px 20px;
+  font-size: var(--body-size);
+  background-color: transparent;
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  border-radius: 5px;
+  cursor: pointer;
+}
+#pengaduan-kasus .pengaduan-kasus-content  a {
+  text-decoration: none;
+  color: inherit;
+}
+#pengaduan-kasus .pengaduan-kasus-content button:hover {
+  background-color: var(--color-light);
+  color: var(--color);
+}
 
 /* BAGIAN TEXT SHOW */
 
