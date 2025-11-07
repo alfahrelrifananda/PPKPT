@@ -368,7 +368,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-#pengaduan-kasus .pengaduan-kasus-content  a {
+#pengaduan-kasus .pengaduan-kasus-content a {
   text-decoration: none;
   color: inherit;
 }
@@ -433,4 +433,50 @@
 .text-element-body.show,
 .text-element-body-long.show {
   top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #jumbotron {
+    background-position: center;
+  }
+  #tentang-kami .tentang-kami-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #tentang-kami .tentang-kami-content {
+    grid-template-columns: 1fr;
+  }
+
+  #visi-misi {
+    grid-template-columns: 1fr;
+  }
+  #apa-itu {
+    min-height: fit-content;
+  }
+  #apa-itu .apa-itu-container {
+    text-align: left;
+  }
+
+  #jenis-jenis .jenis-jenis-list {
+    grid-template-columns: 1fr;
+  }
+  #dampak {
+    grid-template-columns: 1fr;
+  }
+
+  #dampak .dampak-image {
+    display: none;
+  }
+
+  .text-container-header {
+    height: var(--header-height);
+  }
+
+  #penanganan-dan-tindaklanjut
+    .penanganan-dan-tindaklanjut-step
+    .penanganan-dan-tindaklanjut-step-item
+    .step-number {
+    padding: 5px 15px;
+    font-size: var(--subheader-size);
+  }
 }

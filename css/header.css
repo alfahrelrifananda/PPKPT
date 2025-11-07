@@ -1,9 +1,11 @@
 @import url("style.css");
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
+  transition: all .5s;
   width: 100%;
 }
 
@@ -41,4 +43,13 @@ header nav ul li a {
   text-decoration: none;
   color: var(--color-light);
   font-weight: var(--semi-bold);
+}
+
+@media screen and (max-width: 1000px) {
+  header nav ul {
+    display: none;
+  }
+  header nav .logo {
+    font-size: 12px;
+  }
 }
