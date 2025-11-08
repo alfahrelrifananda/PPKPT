@@ -1,7 +1,7 @@
 @import url("style.css");
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 99;
@@ -60,6 +60,7 @@ header .close-menu-button {
 @media screen and (max-width: 1000px) {
   header {
     z-index: 2;
+    position: fixed;
   }
   header nav ul {
     position: absolute;
@@ -69,7 +70,7 @@ header .close-menu-button {
     right: -100vw;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     min-width: 60vw;
     transition: all 0.5s;
     z-index: 999;
