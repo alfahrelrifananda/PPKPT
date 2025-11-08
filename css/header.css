@@ -64,7 +64,7 @@ header .close-menu-button {
   }
   header nav ul {
     position: absolute;
-    background-color: var(--color);
+    background-color: black;
     flex-direction: column;
     top: 0;
     right: -100vw;
