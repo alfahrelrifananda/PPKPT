@@ -48,6 +48,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Work Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1000px) {

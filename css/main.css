@@ -16,7 +16,7 @@
   color: var(--color-light);
   font-weight: var(--semi-bold);
 }
-#jumbotron .jumbotron-content button {
+#jumbotron .jumbotron-content a {
   padding: 10px 20px;
   font-size: var(--body-size);
   background-color: transparent;
@@ -24,9 +24,10 @@
   border: 1px solid var(--color-light);
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-#jumbotron .jumbotron-content button:hover {
+#jumbotron .jumbotron-content a:hover {
   background-color: var(--color-light);
   color: var(--color);
 }
@@ -438,10 +439,14 @@
 @media screen and (max-width: 1000px) {
   #jumbotron {
     background-position: center;
+    min-height: 80vh;
   }
   #tentang-kami .tentang-kami-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+  #tentang-kami .tentang-kami-grid-item:nth-child(1) {
+    grid-row: 1;
   }
   #tentang-kami .tentang-kami-content {
     grid-template-columns: 1fr;
@@ -472,11 +477,28 @@
     height: var(--header-height);
   }
 
+  .text-element-header {
+    top: 50px;
+  }
+
+  .text-container-subheader {
+    height: fit-content;
+  }
+
   #penanganan-dan-tindaklanjut
     .penanganan-dan-tindaklanjut-step
     .penanganan-dan-tindaklanjut-step-item
     .step-number {
     padding: 5px 15px;
     font-size: var(--subheader-size);
+  }
+  ol {
+    padding-inline-start: 20px;
+  }
+  #jumbotron .jumbotron-content .text-container {
+    height: 50px;
+  }
+  #pengaduan-kasus .pengaduan-kasus-content button {
+    margin-top: 10px;
   }
 }

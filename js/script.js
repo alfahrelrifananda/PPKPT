@@ -18,6 +18,57 @@ const textElementBodyLong2 = document.querySelectorAll(
   "#visi-misi .text-element-body-long"
 );
 
+const navUl = document.querySelectorAll("header nav ul");
+const hamburgerMenuButton = document.querySelectorAll(".hamburger-menu-button");
+const closeMenuOverlay = document.querySelectorAll(".close-menu-overlay");
+const menuA = document.querySelectorAll("header nav ul li a");
+
+
+function toggleMenu() {
+  hamburgerMenuButton.forEach((element) => {
+    element.addEventListener("click", () => {
+      navUl.forEach((element) => {
+        element.classList.toggle("show");
+      });
+      
+      
+      menuA.forEach((element) => {
+        element.addEventListener("click", () => {
+          navUl.forEach((element) => {
+            element.classList.remove("show");
+          });
+          
+          closeMenuOverlay.forEach((element) => {
+            element.classList.remove("show");
+          });
+        });
+      });
+
+      closeMenuOverlay.forEach((element) => {
+        element.classList.toggle("show");
+
+        element.addEventListener("click", () => {
+          navUl.forEach((element) => {
+            element.classList.remove("show");
+          });
+
+          closeMenuOverlay.forEach((element) => {
+            element.classList.remove("show");
+          });
+        });
+      });
+    });
+  });
+}
+
+toggleMenu();
+
+function toggleNav() {
+  navOl.forEach((element) => {
+    element.classList.toggle("show");
+  });
+}
+
 // Source - https://stackoverflow.com/questions/63382647/howto-add-class-when-section-is-in-viewport
 // Posted by ikiK
 // Retrieved 2025-11-06, License - CC BY-SA 4.0
@@ -86,20 +137,20 @@ showWhenLoad();
 // Source - https://stackoverflow.com/questions/75349881/how-can-i-have-the-page-reload-to-the-top-of-the-screen-right-now-it-reloads-to
 // Posted by zackaria_asks
 // Retrieved 2025-11-06, License - CC BY-SA 4.0
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// };
 
 // Source - https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery
 // Posted by Amaresh S M
 // Retrieved 2025-11-06, License - CC BY-SA 4.0
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav-scroll").style.top = "0";
   } else {
     document.getElementById("nav-scroll").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
