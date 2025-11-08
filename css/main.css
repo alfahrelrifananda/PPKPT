@@ -439,6 +439,7 @@
 @media screen and (max-width: 1000px) {
   #jumbotron {
     background-position: center;
+    background-size: cover;
     min-height: 80vh;
   }
   #tentang-kami .tentang-kami-grid {

@@ -144,13 +144,13 @@ showWhenLoad();
 // Source - https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery
 // Posted by Amaresh S M
 // Retrieved 2025-11-06, License - CC BY-SA 4.0
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-scroll").style.top = "0";
-  } else {
-    document.getElementById("nav-scroll").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-};
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("nav-scroll").style.top = "0";
+//   } else {
+//     document.getElementById("nav-scroll").style.top = "-100px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// };

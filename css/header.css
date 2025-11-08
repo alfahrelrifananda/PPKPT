@@ -71,7 +71,6 @@ header .close-menu-button {
     justify-content: center;
     min-height: 100vh;
     min-width: 65vw;
-    padding-bottom: 20vh;
     transition: all 0.5s;
     z-index: 999;
   }
