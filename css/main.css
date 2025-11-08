@@ -440,7 +440,7 @@
   #jumbotron {
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 90vh;
   }
   #tentang-kami .tentang-kami-grid {
     grid-template-columns: 1fr;

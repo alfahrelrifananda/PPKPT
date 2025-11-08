@@ -81,7 +81,7 @@ header .close-menu-button {
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url(../assets/hamburber.png);
+    background-image: url(../assets/ham.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,9 +108,9 @@ header .close-menu-button {
     height: 0;
     z-index: 2;
     border-radius: 50%;
-    transition: all 0.5s;
+    transition: all 0.7s;
     opacity: 0;
-    top: -50vh;
+    top: -100vh;
     right: -50vh;
   }
   .close-menu-overlay.show {

@@ -23,23 +23,25 @@ const hamburgerMenuButton = document.querySelectorAll(".hamburger-menu-button");
 const closeMenuOverlay = document.querySelectorAll(".close-menu-overlay");
 const menuA = document.querySelectorAll("header nav ul li a");
 
-
 function toggleMenu() {
   hamburgerMenuButton.forEach((element) => {
     element.addEventListener("click", () => {
       navUl.forEach((element) => {
         element.classList.toggle("show");
       });
-      
-      
+
+      document.body.style.overflow = "hidden";
+
       menuA.forEach((element) => {
         element.addEventListener("click", () => {
           navUl.forEach((element) => {
             element.classList.remove("show");
+            document.body.style.overflow = "auto";
           });
-          
+
           closeMenuOverlay.forEach((element) => {
             element.classList.remove("show");
+            document.body.style.overflow = "auto";
           });
         });
       });
@@ -50,10 +52,12 @@ function toggleMenu() {
         element.addEventListener("click", () => {
           navUl.forEach((element) => {
             element.classList.remove("show");
+            document.body.style.overflow = "auto";
           });
 
           closeMenuOverlay.forEach((element) => {
             element.classList.remove("show");
+            document.body.style.overflow = "auto";
           });
         });
       });

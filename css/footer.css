@@ -8,6 +8,7 @@ footer {
   background-color: var(--color-light);
   display: flex;
   justify-content: space-between;   
+  font-size: var(--body-size);
 }
 
 footer .footer-logo img {
