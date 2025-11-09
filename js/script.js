@@ -7,9 +7,23 @@ const tentangKamiImg = document.querySelectorAll(".tentang-kami-grid-item-img");
 const textElementSubheader = document.querySelectorAll(
   ".text-element-subheader"
 );
+const visiMisiBody = document.querySelectorAll(
+  "#visi-misi .text-element-body"
+);
 const textElementBody = document.querySelectorAll(".text-element-body");
 const tentangKamiBodyLong = document.querySelectorAll(
-  ".text-element-body-long"
+  "#tentang-kami .text-element-body-long"
+);
+const tentangKamiBody = document.querySelectorAll(
+  "#tentang-kami .text-element-body"
+);
+
+const dampakBodyLong = document.querySelectorAll(
+  "#dampak .text-element-body-long"
+);
+const dampakHeader = document.querySelectorAll("#dampak .text-element-header");
+const visiMisiBodyLong = document.querySelectorAll(
+  "#visi-misi .text-element-body-long"
 );
 const textElementBodyLong = document.querySelectorAll(
   ".text-element-body-long"
@@ -130,12 +144,15 @@ function showWhenLoad() {
 showWhenScoll(textElementHeader);
 showWhenScoll(textElementSubheader);
 showWhenScoll(textElementHeader2);
+showWhenScoll(tentangKamiImg);
 showWhenScoll(textElementBody);
 showWhenScoll(textElementBodyLong);
 showWhenScollAccording(tentangKamiImg, textElementHeader);
-showWhenScollAccording(textElementBody, textElementSubheader);
-showWhenScollAccording(tentangKamiBodyLong, textElementSubheader);
-showWhenScollAccording(textElementBodyLong2, textElementHeader2);
+// showWhenScollAccording(textElementBody, textElementSubheader);
+showWhenScollAccording(tentangKamiBodyLong, tentangKamiBody);
+showWhenScollAccording(visiMisiBodyLong, visiMisiBody);
+showWhenScollAccording(dampakBodyLong, dampakHeader);
+// showWhenScollAccording(textElementBodyLong2, textElementHeader2);
 showWhenLoad();
 
 // Source - https://stackoverflow.com/questions/75349881/how-can-i-have-the-page-reload-to-the-top-of-the-screen-right-now-it-reloads-to
