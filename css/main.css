@@ -4,7 +4,7 @@
   display: flex;
   min-height: calc(100vh - var(--padding-vertical));
   padding-bottom: calc(var(--padding-vertical) * 3);
-  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
+  background-image: url(../assets/image\ 1.png);
   background-size: cover;
   background-attachment: fixed;
   align-items: end;
@@ -75,7 +75,7 @@
   grid-row: 1 / span 2;
 }
 #tentang-kami .tentang-kami-grid-item-img {
-  background-image: url(../assets/tentang_kami/Rectangle\ 46.png);
+  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -87,7 +87,7 @@
 }
 
 #tentang-kami .tentang-kami-grid-item:nth-child(1) .tentang-kami-grid-item-img {
-  background-image: url(../assets/tentang_kami/Rectangle\ 45.png);
+  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
 }
 
 #tentang-kami .tentang-kami-grid-item-img.show {
@@ -443,12 +443,22 @@
     min-height: 80vh;
     background-attachment: unset;
   }
+  #tentang-kami {
+    min-height: fit-content;
+  }
   #tentang-kami .tentang-kami-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-height: 30vh;
   }
   #tentang-kami .tentang-kami-grid-item:nth-child(1) {
     grid-row: 1;
+  }
+  #tentang-kami .tentang-kami-grid-item:nth-child(2) {
+    display: none;
+  }
+  #tentang-kami .tentang-kami-grid-item:nth-child(3) {
+    display: none;
   }
   #tentang-kami .tentang-kami-content {
     grid-template-columns: 1fr;
