@@ -4,7 +4,7 @@
   display: flex;
   min-height: calc(100vh - var(--padding-vertical));
   padding-bottom: calc(var(--padding-vertical) * 3);
-  background-image: url(../assets/image\ 1.png);
+  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   align-items: end;
@@ -440,7 +440,7 @@
   #jumbotron {
     background-position: center;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 80vh;
     background-attachment: unset;
   }
   #tentang-kami .tentang-kami-grid {
@@ -476,11 +476,11 @@
   }
 
   .text-container-header {
-    height: var(--header-height);
+    height: 50px;
   }
 
   .text-element-header {
-    top: 50px;
+    top: 75px;
   }
 
   .text-container-subheader {
