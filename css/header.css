@@ -17,11 +17,12 @@ header nav {
   padding-right: var(--padding-horizontal);
 }
 
-header nav .logo {
+header nav .logo a {
   display: flex;
   color: var(--color-light);
   font-weight: var(--bold);
   align-items: center;
+  text-decoration: none;
 }
 
 header nav .logo img {
@@ -51,6 +52,7 @@ header .hamburger-menu-button {
 header .close-menu-button {
   display: none;
 }
+
 
 .close-menu-overlay {
   display: none;

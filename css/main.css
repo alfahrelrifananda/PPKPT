@@ -481,6 +481,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  
+  .support-floating {
+    width: 30px;
+    height: 30px;
+  }
   #jumbotron {
     min-height: 80vh;
   }
