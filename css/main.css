@@ -4,7 +4,7 @@
   display: flex;
   min-height: calc(100vh - var(--padding-vertical));
   padding-bottom: calc(var(--padding-vertical) * 3);
-  background-image: url(../assets/image\ 1.png);
+  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   align-items: end;
@@ -428,6 +428,12 @@
   top: 200px;
   font-family: "Work Sans", Arial, sans-serif;
 }
+
+#visi-misi .text-container-body-long {
+  max-height: 300px;
+  height: fit-content;
+}
+
 .text-element-header.show,
 .text-element-subheader.show,
 .text-element-body.show,

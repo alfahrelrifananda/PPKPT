@@ -1,3 +1,4 @@
+const header = document.querySelectorAll("header nav");
 const jumbotronP = document.querySelectorAll(".jumbotron-p");
 const textElementHeader = document.querySelectorAll(".text-element-header");
 const textElementHeader2 = document.querySelectorAll(
@@ -137,6 +138,23 @@ function showWhenLoad() {
   );
 }
 
+function showWhenScollAfter(el) {
+  window.addEventListener(
+    "scroll",
+    function (event) {
+      el.forEach((element) => {
+        if (window.scrollY > 100) {
+          element.classList.add("dark");
+        } else if (window.scrollY < 100) {
+          element.classList.remove("dark");
+        }
+      });
+    },
+    false
+  );
+}
+
+showWhenScollAfter(header);
 showWhenScoll(textElementHeader);
 showWhenScoll(textElementSubheader);
 showWhenScoll(textElementHeader2);

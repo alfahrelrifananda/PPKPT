@@ -74,6 +74,9 @@ header .close-menu-button {
     transition: all 0.5s;
     z-index: 999;
   }
+  header nav.dark {
+    background-color: rgba(0, 0, 0, 0.794);
+  }
   header nav ul.show {
     right: 0;
   }
@@ -103,19 +106,19 @@ header .close-menu-button {
   .close-menu-overlay {
     display: block;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.565);
-    width: 0;
-    height: 0;
+    background-color: rgba(0, 0, 0, 0.711);
+    will-change: transform;
+    width: 100px;
+    height: 100px;
     z-index: 2;
     border-radius: 50%;
     transition: all 0.7s;
     opacity: 0;
-    top: -40px;
-    right: -30px;
+    top: -300px;
+    right: -300px;
   }
   .close-menu-overlay.show {
-    width: 700px;
-    height: 1000px;
+    transform: scale(100);
     opacity: 1;
   }
   header nav .logo {
