@@ -143,9 +143,9 @@ function showWhenScollAfter(el) {
     "scroll",
     function (event) {
       el.forEach((element) => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 10) {
           element.classList.add("dark");
-        } else if (window.scrollY < 100) {
+        } else if (window.scrollY < 10) {
           element.classList.remove("dark");
         }
       });

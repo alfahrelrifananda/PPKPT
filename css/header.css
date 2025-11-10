@@ -118,7 +118,7 @@ header .close-menu-button {
     right: -300px;
   }
   .close-menu-overlay.show {
-    transform: scale(100);
+    transform: scale(30);
     opacity: 1;
   }
   header nav .logo {
