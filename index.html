@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPKPT - Upitra</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/Logo_upitra 1.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/Logo_upitra 1.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,326 +20,377 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/loading.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" /> 
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body>
-    <header id="nav-scroll">
-      <nav>
-        <div class="logo">
-          <img src="assets/Logo_upitra 1.png" alt="" />
-          <h1>UPITRA</h1>
+  <body class="loading">
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-subtitle">Memuat Halaman</div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
         </div>
-        <div class="hamburger-menu-button"></div>
-        <ul>
-          <div class="close-menu-button"></div>
-          <li><a href="#jumbotron">Home</a></li>
-          <li><a href="#tentang-kami">About</a></li>
-          <li><a href="#dampak">Satgas</a></li>
-          <li><a href="#pengaduan-kasus">Pengaduan</a></li>
-        </ul>
-       <div class="close-menu-overlay"></div>
-      </nav>
-    </header>
-    
-    <a href="https://wa.me/6285320833839" class="support-floating">      
-      <img src="assets/support 1.png" alt="">      
-    </a>
+        <div class="progress-text" id="progress-text">0%</div>
+      </div>
+    </div>
 
-    <main>
-      <section id="jumbotron">
-        <img src="assets/image 1.png" alt="Background" class="jumbotron-bg" />
-        <div class="jumbotron-content">
-          <div class="text-container">
-            <p class="jumbotron-p">Satgas</p>
-            <br />
+    <div id="main-content">
+      <header id="nav-scroll">
+        <nav>
+          <div class="logo">
+            <img src="assets/Logo_upitra 1.png" alt="" />
+            <h1>UPITRA</h1>
           </div>
-          <div class="text-container">
-            <p class="jumbotron-p">Pencegahan dan</p>
-            <br />
-          </div>
-          <div class="text-container">
-            <p class="jumbotron-p">Penanganan Kekerasan</p>
-            <br />
-          </div>
-          <a href="#tentang-kami">Selengkapnya</a>
-        </div>
-      </section>
+          <div class="hamburger-menu-button"></div>
+          <ul>
+            <div class="close-menu-button"></div>
+            <li><a href="#jumbotron">Home</a></li>
+            <li><a href="#tentang-kami">About</a></li>
+            <li><a href="#dampak">Satgas</a></li>
+            <li><a href="#pengaduan-kasus">Pengaduan</a></li>
+          </ul>
+          <div class="close-menu-overlay"></div>
+        </nav>
+      </header>
 
-      <section id="tentang-kami">
-        <div class="text-container-header">
-          <p class="text-element-header">Tentang Kami</p>
-        </div>
+      <a href="https://wa.me/6285320833839" class="support-floating">
+        <img src="assets/support 1.png" alt="" />
+      </a>
 
-        <div class="tentang-kami-grid">
-          <div class="tentang-kami-grid-item">
-            <img src="assets/Rectangle 45.png" alt="Tentang Kami 1" class="tentang-kami-grid-item-img" />
-          </div>
-          <div class="tentang-kami-grid-item">
-            <img src="assets/Rectangle 46.png" alt="Tentang Kami 2" class="tentang-kami-grid-item-img" />
-          </div>
-          <div class="tentang-kami-grid-item">
-            <img src="assets/Rectangle 51.png" alt="Tentang Kami 3" class="tentang-kami-grid-item-img" />
-          </div>
-        </div>
-
-        <div class="tentang-kami-content">
-          <div class="tentang-kami-apa-itu">
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Apa itu PPKPT?</p>
+      <main>
+        <section id="jumbotron">
+          <img src="assets/image 1.png" alt="Background" class="jumbotron-bg" />
+          <div class="jumbotron-content">
+            <div class="text-container">
+              <p class="jumbotron-p">Satgas</p>
+              <br />
             </div>
+            <div class="text-container">
+              <p class="jumbotron-p">Pencegahan dan</p>
+              <br />
+            </div>
+            <div class="text-container">
+              <p class="jumbotron-p">Penanganan Kekerasan</p>
+              <br />
+            </div>
+            <a href="#tentang-kami">Selengkapnya</a>
+          </div>
+        </section>
 
+        <section id="tentang-kami">
+          <div class="text-container-header">
+            <p class="text-element-header">Tentang Kami</p>
+          </div>
+
+          <div class="tentang-kami-grid">
+            <div class="tentang-kami-grid-item">
+              <img
+                src="assets/Rectangle 45.png"
+                alt="Tentang Kami 1"
+                class="tentang-kami-grid-item-img"
+              />
+            </div>
+            <div class="tentang-kami-grid-item">
+              <img
+                src="assets/Rectangle 46.png"
+                alt="Tentang Kami 2"
+                class="tentang-kami-grid-item-img"
+              />
+            </div>
+            <div class="tentang-kami-grid-item">
+              <img
+                src="assets/Rectangle 51.png"
+                alt="Tentang Kami 3"
+                class="tentang-kami-grid-item-img"
+              />
+            </div>
+          </div>
+
+          <div class="tentang-kami-content">
+            <div class="tentang-kami-apa-itu">
+              <div class="text-container-subheader">
+                <p class="text-element-subheader">Apa itu PPKPT?</p>
+              </div>
+
+              <div class="text-container-body">
+                <p class="text-element-body">
+                  PPKPT (Pengenalan Program Kehidupan Perguruan Tinggi) adalah
+                  kegiatan pengenalan lingkungan kampus bagi mahasiswa baru.
+                </p>
+              </div>
+              <div class="text-container-body">
+                <p class="text-element-body">
+                  Tujuannya untuk membantu mahasiswa beradaptasi dengan
+                  kehidupan akademik, mengenal nilai-nilai kampus, dan membangun
+                  karakter yang berintegritas.
+                </p>
+              </div>
+            </div>
+            <div class="tentang-kami-tujuan">
+              <div class="text-container-subheader">
+                <p class="text-element-subheader">Tujuan Utama PPKPT</p>
+              </div>
+              <div class="text-container-body-long">
+                <div class="text-element-body-long">
+                  <ol>
+                    <li>Memperkenalkan sistem dan budaya akademik kampus.</li>
+                    <li>
+                      Menumbuhkan semangat kebersamaan, disiplin, dan tanggung
+                      jawab.
+                    </li>
+                    <li>
+                      Menegakkan nilai anti-perundungan dan saling menghormati.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="visi-misi">
+          <div class="visi-container">
+            <div class="text-container-header">
+              <p class="text-element-header">Visi</p>
+            </div>
             <div class="text-container-body">
               <p class="text-element-body">
-                PPKPT (Pengenalan Program Kehidupan Perguruan Tinggi) adalah
-                kegiatan pengenalan lingkungan kampus bagi mahasiswa baru.
-              </p>
-            </div>
-            <div class="text-container-body">
-              <p class="text-element-body">
-                Tujuannya untuk membantu mahasiswa beradaptasi dengan kehidupan
-                akademik, mengenal nilai-nilai kampus, dan membangun karakter
-                yang berintegritas.
+                "Mewujudkan kampus yang aman, manusiawi, setara, inklusif, dan
+                bebas dari segala bentuk kekerasan".
               </p>
             </div>
           </div>
-          <div class="tentang-kami-tujuan">
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Tujuan Utama PPKPT</p>
+          <div class="misi-container">
+            <div class="text-container-header">
+              <p class="text-element-header">Misi</p>
             </div>
             <div class="text-container-body-long">
               <div class="text-element-body-long">
                 <ol>
-                  <li>Memperkenalkan sistem dan budaya akademik kampus.</li>
                   <li>
-                    Menumbuhkan semangat kebersamaan, disiplin, dan tanggung
-                    jawab.
+                    Menyelenggarakan pendidikan dan sosialisasi nilai-nilai
+                    anti-kekerasan di lingkungan kampus.
                   </li>
                   <li>
-                    Menegakkan nilai anti-perundungan dan saling menghormati.
+                    Membentuk karakter mahasiswa yang berintegritas dan
+                    menghormati perbedaan.
+                  </li>
+                  <li>
+                    Menumbuhkan budaya akademik yang menghargai keadilan gender
+                    dan kesetaraan.
+                  </li>
+                  <li>
+                    Mendorong kolaborasi positif antar mahasiswa, dosen, dan
+                    tenaga kependidikan.
                   </li>
                 </ol>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="visi-misi">
-        <div class="visi-container">
-          <div class="text-container-header">
-            <p class="text-element-header">Visi</p>
-          </div>
-          <div class="text-container-body">
-            <p class="text-element-body">
-              "Mewujudkan kampus yang aman, manusiawi, setara, inklusif, dan
-              bebas dari segala bentuk kekerasan".
-            </p>
-          </div>
-        </div>
-        <div class="misi-container">
-          <div class="text-container-header">
-            <p class="text-element-header">Misi</p>
-          </div>
-          <div class="text-container-body-long">
-            <div class="text-element-body-long">
-              <ol>
-                <li>
-                  Menyelenggarakan pendidikan dan sosialisasi nilai-nilai anti-kekerasan di lingkungan kampus.
-                </li>
-                <li>
-                  Membentuk karakter mahasiswa yang berintegritas dan menghormati perbedaan.
-                </li>
-                <li>
-                  Menumbuhkan budaya akademik yang menghargai keadilan gender dan kesetaraan.
-                </li>
-                <li>
-                  Mendorong kolaborasi positif antar mahasiswa, dosen, dan tenaga kependidikan.
-                </li>
-              </ol>
+        <section id="apa-itu">
+          <div class="apa-itu-container">
+            <div class="text-container-header">
+              <p class="text-element-header">Apa itu Bullying?</p>
             </div>
-        </div>
-      </section>
-      
-      <section id="apa-itu">
-        <div class="apa-itu-container">
-          <div class="text-container-header">
-            <p class="text-element-header">Apa itu Bullying?</p>
+            <div class="text-container-body">
+              <p class="text-element-body">
+                Bullying adalah segala bentuk kekerasan, intimidasi, atau
+                perlakuan yang merendahkan martabat seseorang baik secara fisik,
+                verbal, sosial, maupun daring.
+              </p>
+            </div>
           </div>
-          <div class="text-container-body">
-            <p class="text-element-body">
-              Bullying adalah segala bentuk kekerasan, intimidasi, atau perlakuan yang merendahkan martabat seseorang baik secara fisik, verbal, sosial, maupun daring.
-            </p>
-          </div>  
-        </div>
-      </section>
-      
-      <section id="jenis-jenis">
-        <div class="jenis-jenis-container">
-          <div class="text-container-header">
-            <p class="text-element-header">Jenis-Jenis Bullying</p>
-          </div>
-          <div class="jenis-jenis-list">
-            <div class="jenis-jenis-item satu">
-              <div class="jenis-jenis-item-number">01</div>
-              <div class="text-container-subheader">
-                <p class="text-element-subheader">Bullying Verbal</p>
+        </section>
+
+        <section id="jenis-jenis">
+          <div class="jenis-jenis-container">
+            <div class="text-container-header">
+              <p class="text-element-header">Jenis-Jenis Bullying</p>
+            </div>
+            <div class="jenis-jenis-list">
+              <div class="jenis-jenis-item satu">
+                <div class="jenis-jenis-item-number">01</div>
+                <div class="text-container-subheader">
+                  <p class="text-element-subheader">Bullying Verbal</p>
+                </div>
+                <div class="text-container-body">
+                  <p class="text-element-body">
+                    Tindakan yang menggunakan kata-kata kasar atau ucapan
+                    menyakitkan
+                  </p>
+                </div>
               </div>
-              <div class="text-container-body">
-                <p class="text-element-body">
-                  Tindakan yang menggunakan kata-kata kasar atau ucapan menyakitkan
+              <div class="jenis-jenis-item dua">
+                <div class="jenis-jenis-item-number">02</div>
+                <div class="text-container-subheader">
+                  <p class="text-element-subheader">Bullying Fisik</p>
+                </div>
+                <div class="text-container-body">
+                  <p class="text-element-body">
+                    Tindakan kekerasan fisik yang terlihat secara langsung
+                  </p>
+                </div>
+              </div>
+              <div class="jenis-jenis-item tiga">
+                <div class="jenis-jenis-item-number">03</div>
+                <div class="text-container-subheader">
+                  <p class="text-element-subheader">Bullying Sosial</p>
+                </div>
+                <div class="text-container-body">
+                  <p class="text-element-body">
+                    Tindakan untuk merusak reputasi sosial atau kesejahteraan
+                    emosional korban
+                  </p>
+                </div>
+              </div>
+              <div class="jenis-jenis-item empat">
+                <div class="jenis-jenis-item-number">04</div>
+                <div class="text-container-subheader">
+                  <p class="text-element-subheader">Cyberbullying</p>
+                </div>
+                <div class="text-container-body">
+                  <p class="text-element-body">
+                    Tindakan perundungan yang dilakukan melalui media elektronik
+                    dan internet
+                  </p>
+                </div>
+              </div>
+              <div class="jenis-jenis-item lima">
+                <div class="jenis-jenis-item-number">05</div>
+                <div class="text-container-subheader">
+                  <p class="text-element-subheader">Bullying Seksual</p>
+                </div>
+                <div class="text-container-body">
+                  <p class="text-element-body">
+                    Tindakan pelecehan seksual yang dapat dilakukan secara fisik
+                    maupun verbal,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="dampak">
+          <div class="dampak-content">
+            <div class="dampak-content-important">Important!</div>
+            <div class="text-container-header">
+              <p class="text-element-header">Dampak Bullying</p>
+            </div>
+            <div class="text-container-body-long">
+              <p class="text-element-body-long">
+                Bullying bukan hanya menyebabkan luka fisik, tetapi juga
+                menghancurkan rasa percaya diri, kenyamanan belajar, dan
+                hubungan sosial di kampus. Dampaknya bisa dirasakan oleh korban,
+                pelaku, bahkan lingkungan kampus.
+              </p>
+            </div>
+            <div class="text-container-body">
+              <p class="text-element-body">
+                <i
+                  >"Bullying merusak manusia dan menghancurkan masa depan
+                  bersama."</i
+                >
+              </p>
+            </div>
+          </div>
+          <div class="dampak-image">
+            <img
+              src="assets/image 3.png"
+              alt="Dampak Bullying"
+              class="dampak-image-img"
+            />
+          </div>
+        </section>
+
+        <section id="penanganan-dan-tindaklanjut">
+          <div class="penanganan-dan-tindaklanjut-header">
+            <div class="text-container-header">
+              <p class="text-element-header">Penanganan dan Tindak Lanjut</p>
+            </div>
+            <div class="text-container-body">
+              <p class="text-element-body">
+                Berdasarkan Bab III & V Permen PPKS, kampus wajib memiliki
+                sistem penanganan yang empatik, rahasia, dan berpihak pada
+                korban.
+              </p>
+            </div>
+          </div>
+          <div class="penanganan-dan-tindaklanjut-step">
+            <div class="penanganan-dan-tindaklanjut-step-item satu">
+              <div class="step-number">01</div>
+              <div class="text-container-subheader">
+                <p class="text-element-subheader">Menerima Pengaduan</p>
+              </div>
+            </div>
+            <div class="penanganan-dan-tindaklanjut-step-item dua">
+              <div class="step-number">02</div>
+              <div class="text-container-subheader">
+                <p class="text-element-subheader">Memproses Pengaduan</p>
+              </div>
+            </div>
+            <div class="penanganan-dan-tindaklanjut-step-item tiga">
+              <div class="step-number">03</div>
+              <div class="text-container-subheader">
+                <p class="text-element-subheader">
+                  Memastikan Kebenaran Laporan
                 </p>
               </div>
             </div>
-             <div class="jenis-jenis-item dua">
-              <div class="jenis-jenis-item-number">02</div>
+            <div class="penanganan-dan-tindaklanjut-step-item empat">
+              <div class="step-number">04</div>
               <div class="text-container-subheader">
-                <p class="text-element-subheader">Bullying Fisik</p>
-              </div>
-              <div class="text-container-body">
-                <p class="text-element-body">
-                  Tindakan kekerasan fisik yang terlihat secara langsung
-                </p>
+                <p class="text-element-subheader">Menindaklanjuti Laporan</p>
               </div>
             </div>
-             <div class="jenis-jenis-item tiga">
-              <div class="jenis-jenis-item-number">03</div>
+            <div class="penanganan-dan-tindaklanjut-step-item lima">
+              <div class="step-number">05</div>
               <div class="text-container-subheader">
-                <p class="text-element-subheader">Bullying Sosial</p>
-              </div>
-              <div class="text-container-body">
-                <p class="text-element-body">
-                  Tindakan untuk merusak reputasi sosial atau kesejahteraan emosional korban
-                </p>
-              </div>
-            </div>
-             <div class="jenis-jenis-item empat">
-              <div class="jenis-jenis-item-number">04</div>
-              <div class="text-container-subheader">
-                <p class="text-element-subheader">Cyberbullying</p>
-              </div>
-              <div class="text-container-body">
-                <p class="text-element-body">
-                  Tindakan perundungan yang dilakukan melalui media elektronik dan internet
-                </p>
-              </div>
-            </div>
-             <div class="jenis-jenis-item lima">
-              <div class="jenis-jenis-item-number">05</div>
-              <div class="text-container-subheader">
-                <p class="text-element-subheader">Bullying Seksual</p>
-              </div>
-              <div class="text-container-body">
-                <p class="text-element-body">
-                  Tindakan pelecehan seksual yang dapat dilakukan secara fisik maupun verbal,
+                <p class="text-element-subheader">
+                  Memberikan Rekomendasi Penanganan
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      
-      <section id="dampak">
-        <div class="dampak-content">
-          <div class="dampak-content-important">Important!</div>
-          <div class="text-container-header">
-            <p class="text-element-header">Dampak Bullying</p>
-          </div>
-          <div class="text-container-body-long">
-            <p class="text-element-body-long">
-              Bullying bukan hanya menyebabkan luka fisik, tetapi juga menghancurkan rasa percaya diri, kenyamanan belajar, dan hubungan sosial di kampus. Dampaknya bisa dirasakan oleh korban, pelaku, bahkan lingkungan kampus.
-            </p>
-          </div>
-          <div class="text-container-body">
-            <p class="text-element-body">
-              <i>
-                "Bullying merusak manusia dan menghancurkan masa depan bersama."
-              </i>
-            </p>
-          </div>
-        </div>
-        <div class="dampak-image">
-          <img src="assets/image 3.png" alt="Dampak Bullying" class="dampak-image-img" />
-        </div>
-      </section>
-      
-      <section id="penanganan-dan-tindaklanjut">
-        <div class="penanganan-dan-tindaklanjut-header">
-          <div class="text-container-header">
-            <p class="text-element-header">Penanganan dan Tindak Lanjut</p>
-          </div>
-          <div class="text-container-body">
-            <p class="text-element-body">
-              Berdasarkan Bab III & V Permen PPKS, kampus wajib memiliki sistem penanganan yang empatik, rahasia, dan berpihak pada korban.
-            </p>
-          </div>
-        </div>
-        <div class="penanganan-dan-tindaklanjut-step">
-          <div class="penanganan-dan-tindaklanjut-step-item satu">
-            <div class="step-number">01</div>
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Menerima Pengaduan</p>
+        </section>
+
+        <section id="pengaduan-kasus">
+          <div class="pengaduan-kasus-content">
+            <div class="text-container-header">
+              <p class="text-element-header">Pengaduan Kasus</p>
             </div>
-          </div>
-           <div class="penanganan-dan-tindaklanjut-step-item dua">
-            <div class="step-number">02</div>
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Memproses Pengaduan </p>
+            <div class="text-container-body">
+              <p class="text-element-body">
+                Laporkan jika ada tindak kekerasan yang terjadi di lingkungan
+                kampus
+              </p>
             </div>
+            <a href="https://wa.me/6285320833839">
+              <button>Laporkan Sekarang via WhatsApp</button>
+            </a>
+            <a href="https://forms.gle/927CXyUoczn7oBtN9">
+              <button>Laporkan Sekarang via Form</button>
+            </a>
           </div>
-           <div class="penanganan-dan-tindaklanjut-step-item tiga">
-            <div class="step-number">03</div>
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Memastikan Kebenaran Laporan</p>
-            </div>
-          </div>
-           <div class="penanganan-dan-tindaklanjut-step-item empat">
-            <div class="step-number">04</div>
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Menindaklanjuti Laporan</p> 
-            </div>
-          </div>
-           <div class="penanganan-dan-tindaklanjut-step-item lima">
-            <div class="step-number">05</div>
-            <div class="text-container-subheader">
-              <p class="text-element-subheader">Memberikan Rekomendasi Penanganan</p>
-            </div>
-          </div>
-          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <p>© 2024 Wong Tulus. All rights reserved.</p>
         </div>
-      </section>
-      
-      <section id="pengaduan-kasus">
-        <div class="pengaduan-kasus-content">
-          <div class="text-container-header">
-            <p class="text-element-header">Pengaduan Kasus</p>
-          </div>
-          <div class="text-container-body">
-            <p class="text-element-body">
-              Laporkan jika ada tindak kekerasan yang terjadi di lingkungan kampus
-            </p>
-          </div>
-          <a href="https://wa.me/6285320833839">
-            <button>Laporkan Sekarang via WhatsApp</button>
-          </a>
-          <a href="https://forms.gle/927CXyUoczn7oBtN9">
-            <button>Laporkan Sekarang via Form</button>
-          </a>
+        <div class="footer-logo">
+          <img src="assets/Logo_upitra 3.png" alt="" />
         </div>
-        
-      </section>
-    </main>
-    
-    <footer>
-      <div class="footer-content">
-        <p>© 2024 Wong Tulus. All rights reserved.</p>
-      </div>
-      <div class="footer-logo">
-        <img src="assets/Logo_upitra 3.png" alt="" />
-      </div>
-    </footer>
+      </footer>
+    </div>
+
+    <script src="js/loading.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
