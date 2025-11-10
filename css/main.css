@@ -112,7 +112,7 @@
   background-color: var(--color-secondary-dark);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 3px;
   min-height: fit-content;
 }
 
@@ -173,7 +173,7 @@
 
 /* BAGIAN JENIS-JENIS BULLYING */
 #jenis-jenis {
-  border-top: 5px solid var(--color-light-dim-dark);
+  border-top: 3px solid var(--color-light-dim-dark);
   background-color: var(--color-light);
   min-height: 100vh;
 }
@@ -191,8 +191,8 @@
   background-color: var(--color-light-dim);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  border-top: 5px solid var(--color-light-dim-dark);
-  border-bottom: 5px solid var(--color-light-dim-dark);
+  border-top: 3px solid var(--color-light-dim-dark);
+  border-bottom: 3px solid var(--color-light-dim-dark);
 }
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item {
   padding-left: var(--padding-horizontal);
@@ -201,18 +201,18 @@
   padding-bottom: calc(var(--padding-horizontal) / 2);
 }
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item.satu {
-  border-right: 5px solid var(--color-light-dim-dark);
-  border-bottom: 5px solid var(--color-light-dim-dark);
+  border-right: 3px solid var(--color-light-dim-dark);
+  border-bottom: 3px solid var(--color-light-dim-dark);
 }
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item.dua {
-  border-bottom: 5px solid var(--color-light-dim-dark);
+  border-bottom: 3px solid var(--color-light-dim-dark);
 }
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item.tiga {
-  border-right: 5px solid var(--color-light-dim-dark);
-  border-bottom: 5px solid var(--color-light-dim-dark);
+  border-right: 3px solid var(--color-light-dim-dark);
+  border-bottom: 3px solid var(--color-light-dim-dark);
 }
 #jenis-jenis .jenis-jenis-list .jenis-jenis-item.empat {
-  border-bottom: 5px solid var(--color-light-dim-dark);
+  border-bottom: 3px solid var(--color-light-dim-dark);
 }
 
 /* BAGIAN DAMPAK */
@@ -243,7 +243,7 @@
 }
 
 #dampak .dampak-image {
-  background-image: url(../assets/tentang_kami/Rectangle\ 45.png);
+  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -275,8 +275,8 @@
   padding-right: var(--padding-horizontal);
   padding-top: var(--padding-vertical);
   padding-bottom: var(--padding-vertical);
-  border-top: 2.5px solid var(--color-light-dim-dark);
-  border-bottom: 2.5px solid var(--color-light-dim-dark);
+  border-top: .5px solid var(--color-light-dim-dark);
+  border-bottom: .5px solid var(--color-light-dim-dark);
 }
 
 #penanganan-dan-tindaklanjut
