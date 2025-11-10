@@ -5,7 +5,6 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  transition: all 0.5s;
   width: 100%;
 }
 
@@ -111,15 +110,19 @@ header .close-menu-button {
     border-radius: 50%;
     transition: all 0.7s;
     opacity: 0;
-    top: -100vh;
-    right: -50vh;
+    top: -40px;
+    right: -30px;
   }
   .close-menu-overlay.show {
-    width: 250vw;
-    height: 250vh;
+    width: 700px;
+    height: 1000px;
     opacity: 1;
   }
   header nav .logo {
     font-size: 12px;
+  }
+  header nav .logo img {
+    width: 30px;
+    height: 30px;
   }
 }

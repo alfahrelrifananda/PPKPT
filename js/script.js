@@ -7,9 +7,7 @@ const tentangKamiImg = document.querySelectorAll(".tentang-kami-grid-item-img");
 const textElementSubheader = document.querySelectorAll(
   ".text-element-subheader"
 );
-const visiMisiBody = document.querySelectorAll(
-  "#visi-misi .text-element-body"
-);
+const visiMisiBody = document.querySelectorAll("#visi-misi .text-element-body");
 const textElementBody = document.querySelectorAll(".text-element-body");
 const tentangKamiBodyLong = document.querySelectorAll(
   "#tentang-kami .text-element-body-long"
@@ -79,8 +77,6 @@ function toggleMenu() {
   });
 }
 
-toggleMenu();
-
 function toggleNav() {
   navOl.forEach((element) => {
     element.classList.toggle("show");
@@ -148,30 +144,8 @@ showWhenScoll(tentangKamiImg);
 showWhenScoll(textElementBody);
 showWhenScoll(textElementBodyLong);
 showWhenScollAccording(tentangKamiImg, textElementHeader);
-// showWhenScollAccording(textElementBody, textElementSubheader);
 showWhenScollAccording(tentangKamiBodyLong, tentangKamiBody);
 showWhenScollAccording(visiMisiBodyLong, visiMisiBody);
 showWhenScollAccording(dampakBodyLong, dampakHeader);
-// showWhenScollAccording(textElementBodyLong2, textElementHeader2);
 showWhenLoad();
-
-// Source - https://stackoverflow.com/questions/75349881/how-can-i-have-the-page-reload-to-the-top-of-the-screen-right-now-it-reloads-to
-// Posted by zackaria_asks
-// Retrieved 2025-11-06, License - CC BY-SA 4.0
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
-
-// Source - https://stackoverflow.com/questions/57235230/want-to-hide-show-navbar-when-scroll-down-up-using-js-or-jquery
-// Posted by Amaresh S M
-// Retrieved 2025-11-06, License - CC BY-SA 4.0
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("nav-scroll").style.top = "0";
-//   } else {
-//     document.getElementById("nav-scroll").style.top = "-100px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+toggleMenu();
