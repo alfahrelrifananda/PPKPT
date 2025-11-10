@@ -4,10 +4,19 @@
   display: flex;
   min-height: calc(100vh - var(--padding-vertical));
   padding-bottom: calc(var(--padding-vertical) * 3);
-  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
   align-items: end;
+}
+
+#jumbotron .jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
 }
 
 #jumbotron .jumbotron-content {
@@ -15,6 +24,8 @@
   font-size: var(--header-size);
   color: var(--color-light);
   font-weight: var(--semi-bold);
+  position: relative;
+  z-index: 1;
 }
 #jumbotron .jumbotron-content a {
   padding: 10px 20px;
@@ -69,24 +80,21 @@
 
 #tentang-kami .tentang-kami-grid-item {
   overflow: hidden;
+  position: relative;
 }
 #tentang-kami .tentang-kami-grid-item:nth-child(1) {
   grid-row: 1 / span 2;
 }
 #tentang-kami .tentang-kami-grid-item-img {
-  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
+  width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: 75vh;
+  object-fit: cover;
+  object-position: center;
   position: relative;
+  top: 75vh;
   transition: all 1s;
   border-radius: 5px;
-}
-
-#tentang-kami .tentang-kami-grid-item:nth-child(1) .tentang-kami-grid-item-img {
-  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
+  display: block;
 }
 
 #tentang-kami .tentang-kami-grid-item-img.show {
@@ -242,9 +250,16 @@
 }
 
 #dampak .dampak-image {
-  background-image: url(../assets/1762678913_1762678864-image-1.jpg);
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#dampak .dampak-image .dampak-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* BAGIAN PENGANGAN DAN TINDAKLANJUT */
@@ -441,12 +456,36 @@
   top: 0;
 }
 
+.support-floating {
+  position: fixed;
+  border-radius: 5px;
+  z-index: 79;
+  width: 35px;
+  height: 35px;
+  padding: 15px;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  right: var(--padding-horizontal);
+  bottom: var(--padding-vertical);
+  background-color: black;
+}
+
+.support-floating img {
+  width: 100%;
+  height: 100%;
+}
+
+.support-floating:hover {
+  opacity: .5;
+}
+
 @media screen and (max-width: 1000px) {
   #jumbotron {
-    background-position: center;
-    background-size: cover;
     min-height: 80vh;
-    background-attachment: unset;
+  }
+  #jumbotron .jumbotron-bg {
+    object-position: center;
   }
   #tentang-kami {
     min-height: fit-content;
