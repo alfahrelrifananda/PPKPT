@@ -8,7 +8,7 @@ class AssetLoader {
 
     this.imageSources = [
       "assets/Logo_upitra 1.png",
-      "assets/image 1.png",
+      "assets/Frame 2.png",
       "assets/Rectangle 45.png",
       "assets/Rectangle 46.png",
       "assets/Rectangle 51.png",

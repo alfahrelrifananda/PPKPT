@@ -11,7 +11,6 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  backdrop-filter: blur(10px);
   align-items: center;
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
@@ -53,7 +52,6 @@ header .close-menu-button {
   display: none;
 }
 
-
 .close-menu-overlay {
   display: none;
 }
@@ -62,6 +60,7 @@ header .close-menu-button {
   header {
     z-index: 2;
     position: fixed;
+    backdrop-filter: blur(10px);
   }
   header nav ul {
     position: absolute;

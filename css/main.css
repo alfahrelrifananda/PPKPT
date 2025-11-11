@@ -246,7 +246,20 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #FF6262;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #dampak .dampak-image {
