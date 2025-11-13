@@ -231,6 +231,9 @@
   grid-template-columns: 1fr 1fr;
 }
 #dampak .dampak-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
   padding-top: var(--padding-vertical);
@@ -249,6 +252,7 @@
   background-color: #FF6262;
   animation: blink 1s ease-in-out infinite;
 }
+
 
 @keyframes blink {
   0% {
