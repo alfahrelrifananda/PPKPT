@@ -1,6 +1,6 @@
 # PPKPT
 
-These are website that I made for a college project. I used simple HTML, CSS, and JavaScript to make them.
+This is a website that I made for college project.
 
 ## Link 
 
